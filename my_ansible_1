@@ -1,5 +1,7 @@
 ---
 - hosts: all
   tasks:
-  - name: Ping hosts
+  - name: Ping all hosts
     ping:
+      ansible_user: ansible
+      ansible_password: ansible
